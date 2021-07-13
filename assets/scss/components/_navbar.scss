@@ -8,40 +8,40 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: $s-md-em $s-md 0 $s-md;
-  background: $dark-blue;
+  padding: $s-md-em $s-md 0;
   color: $white;
 
   h1 {
     line-height: 0;
+    font-size: $s-lg;
   }
 
   .hamburguer-icon {
     display: block;
-    width: 3.2rem;
-    height: 0.3rem;
-    background: $soft-red;
+    width: 2.7rem;
+    height: 0.2rem;
+    background: $white;
     position: relative;
     padding-right: $s-md;
 
     &::before {
       content: '';
       display: block;
-      width: 3.2rem;
-      height: 0.3rem;
-      background: $soft-red;
+      width: 2.7rem;
+      height: 0.2rem;
+      background: $white;
       position: absolute;
-      top: -1rem;
+      top: -0.8rem;
     }
 
     &::after {
       content: '';
       display: block;
-      width: 3.2rem;
-      height: 0.3rem;
-      background: $soft-red;
+      width: 2.7rem;
+      height: 0.2rem;
+      background: $white;
       position: absolute;
-      top: 1rem;
+      top: 0.8rem;
     }
   }
 }

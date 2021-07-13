@@ -1,0 +1,51 @@
+@use '../vendor/breakpoints' as *;
+@use '../abstracts/variables' as *;
+
+.home {
+  background-image: url(../../../images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 100%;
+  background-size: cover;
+  padding: $s-6x-em $s-md;
+  padding-top: $s-6x-em;
+  padding-bottom: $s-6x-em;
+
+  h2 {
+    color: $white;
+    font-family: $font-2;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto $s-sm-em;
+    font-size: $s-xl;
+    font-weight: 900;
+    letter-spacing: 1rem;
+  }
+
+  .arrow-main {
+    margin: 0 auto;
+    display: block;
+    width: 0.6rem;
+    height: 10rem;
+    background: $white;
+    border-radius: 0.3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: transparent;
+      width: 3rem;
+      height: 3rem;
+      border-bottom: 0.6rem $white solid;
+      border-left: 0.6rem $white solid;
+      border-radius: 0.3rem;
+      transform: rotate(-45deg);
+      bottom: 0;
+    }
+  }
+}
