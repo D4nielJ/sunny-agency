@@ -19,3 +19,33 @@ $very-dark-grayish-blue: hsl(213, 9%, 39%);
 $dark-grayish-blue: hsl(232, 10%, 55%);
 $grayish-blue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
+
+// Breakpoints
+
+$breakpoints: (
+  'phone': 375px,
+  'tablet': 768px,
+  'desktop': 1024px,
+);
+
+// Spacing
+
+$s-2xs: 0.637rem;
+$s-xs: 0.9rem;
+$s-sm: 1.273rem;
+$s-md: 1.8rem;
+$s-lg: 2.545rem;
+$s-xl: 3.599rem;
+$s-2x: 5.089rem;
+$s-4x: 7.196rem;
+$s-6x: 1.0175rem;
+
+$s-2xs-em: 0.637em;
+$s-xs-em: 0.9em;
+$s-sm-em: 1.273em;
+$s-md-em: 1.8em;
+$s-lg-em: 2.545em;
+$s-xl-em: 3.599em;
+$s-2x-em: 5.089em;
+$s-4x-em: 7.196em;
+$s-6x-em: 1.0175em;

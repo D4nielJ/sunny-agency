@@ -1,0 +1,27 @@
+@use '../vendor/breakpoints' as *;
+@use '../abstracts/variables' as *;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: $font-1;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}

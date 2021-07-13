@@ -4,10 +4,12 @@
 
 @use 'vendor/normalize';
 
-// Abstracts
-
 // Layout
+
+@use 'layout/base';
 
 // Components
 
-// Pages
+@use 'components/navbar';
+
+// Sections

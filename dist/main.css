@@ -337,4 +337,75 @@ template {
   display: none;
 }
 
+/* Styleint disable */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Barlow", sans-serif;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.8em 1.8rem 0 1.8rem;
+  background: #19536b;
+  color: white;
+}
+.navbar h1 {
+  line-height: 0;
+}
+.navbar .hamburguer-icon {
+  display: block;
+  width: 3.2rem;
+  height: 0.3rem;
+  background: #fe7867;
+  position: relative;
+  padding-right: 1.8rem;
+}
+.navbar .hamburguer-icon::before {
+  content: "";
+  display: block;
+  width: 3.2rem;
+  height: 0.3rem;
+  background: #fe7867;
+  position: absolute;
+  top: -1rem;
+}
+.navbar .hamburguer-icon::after {
+  content: "";
+  display: block;
+  width: 3.2rem;
+  height: 0.3rem;
+  background: #fe7867;
+  position: absolute;
+  top: 1rem;
+}
+
+.nav-links {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

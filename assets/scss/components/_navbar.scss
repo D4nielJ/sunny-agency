@@ -1,0 +1,51 @@
+@use '../vendor/breakpoints' as *;
+@use '../abstracts/variables' as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: $s-md-em $s-md 0 $s-md;
+  background: $dark-blue;
+  color: $white;
+
+  h1 {
+    line-height: 0;
+  }
+
+  .hamburguer-icon {
+    display: block;
+    width: 3.2rem;
+    height: 0.3rem;
+    background: $soft-red;
+    position: relative;
+    padding-right: $s-md;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 3.2rem;
+      height: 0.3rem;
+      background: $soft-red;
+      position: absolute;
+      top: -1rem;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 3.2rem;
+      height: 0.3rem;
+      background: $soft-red;
+      position: absolute;
+      top: 1rem;
+    }
+  }
+}
+
+.nav-links {
+  display: none;
+}
